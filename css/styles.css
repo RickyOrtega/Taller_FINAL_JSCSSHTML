@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  height: 99%; }
+
+header {
+  background-color: #CAF0F8;
+  color: #03045E;
+  padding: 20px;
+  width: 100%;
+  font-size: 30px;
+  font-weight: 700; }
+
+.logo {
+  font-size: 50px;
+  font-weight: 700;
+  margin: 20px; }
+
+.ejercicios {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #90E0EF; }
+
+.tarjeta {
+  width: 30%;
+  height: 700px;
+  text-align: center;
+  padding: 20px;
+  background-color: #00B4D8;
+  margin: 40px 0 40px 0;
+  color: #fff;
+  border-radius: 8px;
+  display: inline; }
+  .tarjeta:hover {
+    background-color: #0077B6;
+    transform: scale(1.1);
+    transition: 0.4s;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+  .tarjeta .cabecera_ejercicio {
+    width: 100%;
+    height: 100px;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700; }
+  .tarjeta .imagen_ejercicio {
+    width: 100px;
+    margin: 10px;
+    padding: 0%; }
+  .tarjeta .descripcion {
+    text-align: justify;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px; }
+  .tarjeta .solucion {
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+    background-color: #CAF0F8;
+    color: #03045E;
+    border-radius: 8px; }
+    .tarjeta .solucion:hover {
+      background-color: #90E0EF;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+  .tarjeta a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff; }
+
+footer {
+  width: 100%;
+  background-color: #0077B6;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px; }
