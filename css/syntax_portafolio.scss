@@ -1,5 +1,113 @@
-*{
+//Código: font-family: 'Source Code Pro', monospace;
+//Impact: font-family: 'Bebas Neue', cursive;
+//Cuerpo: font-family: 'Montserrat', sans-serif;
+
+$color_enfasis: #b1002e;
+$color_fondo: #191919;
+
+* {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+}
+
+body {
+    background-color: $color_fondo;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.containers {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    width: 50% !important;
+}
+
+.izquierdo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .presentacion {
+        font-size: 22px;
+        margin: 100px;
+        text-align: justify;
+
+        .nombre {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 60px;
+            letter-spacing: 4px;
+            display: inline;
+
+            &:hover {
+                color: $color_enfasis;
+            }
+        }
+
+        h1 {
+            font-family: 'Source Code Pro', monospace;
+            font-size: 40px;
+            letter-spacing: 8.2px;
+
+            .spring, .java{
+                display: inline;
+            }
+
+            .spring:hover{
+                color: #6db33f;
+            }
+
+            .java:hover{
+                color: #f89820;
+            }
+        }
+
+        .descripcion {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+
+    .ir{
+        margin-top: 20px;
+        font-size: 20px;
+        transition: 0.4s;
+        padding: 10px 20px 10px 20px;
+        background: white;
+
+        &:hover {
+            cursor: pointer;
+            color: white;
+            background: $color_enfasis;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+.derecho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #000;
+}
+
+.imagen_fondo {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
 }

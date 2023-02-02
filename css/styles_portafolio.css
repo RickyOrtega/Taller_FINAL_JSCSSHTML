@@ -2,3 +2,76 @@
   padding: 0%;
   margin: 0%;
   box-sizing: border-box; }
+
+body {
+  background-color: #191919;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  width: 100%;
+  height: 100%; }
+
+.containers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100vh;
+  width: 100%; }
+
+.container {
+  width: 50% !important; }
+
+.izquierdo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
+  .izquierdo .presentacion {
+    font-size: 22px;
+    margin: 100px;
+    text-align: justify; }
+    .izquierdo .presentacion .nombre {
+      font-family: 'Bebas Neue', cursive;
+      font-size: 60px;
+      letter-spacing: 4px;
+      display: inline; }
+      .izquierdo .presentacion .nombre:hover {
+        color: #b1002e; }
+    .izquierdo .presentacion h1 {
+      font-family: 'Source Code Pro', monospace;
+      font-size: 40px;
+      letter-spacing: 8.2px; }
+      .izquierdo .presentacion h1 .spring, .izquierdo .presentacion h1 .java {
+        display: inline; }
+      .izquierdo .presentacion h1 .spring:hover {
+        color: #6db33f; }
+      .izquierdo .presentacion h1 .java:hover {
+        color: #f89820; }
+    .izquierdo .presentacion .descripcion {
+      font-size: 20px;
+      line-height: 30px; }
+  .izquierdo .ir {
+    margin-top: 20px;
+    font-size: 20px;
+    transition: 0.4s;
+    padding: 10px 20px 10px 20px;
+    background: white; }
+    .izquierdo .ir:hover {
+      cursor: pointer;
+      color: white;
+      background: #b1002e; }
+    .izquierdo .ir a {
+      text-decoration: none;
+      color: black; }
+
+.derecho {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #000; }
+
+.imagen_fondo {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover; }
